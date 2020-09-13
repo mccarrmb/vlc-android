@@ -27,7 +27,9 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
-
+    lintOptions {
+        abortOnError false
+    }
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion

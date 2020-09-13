@@ -21,10 +21,6 @@ medialibrary/.libs
 # debug symbols
 .dbg
 
-# Local configuration
-local.properties
-env.sh
-
 # OS specific
 .DS_Store
 .directory
@@ -46,17 +42,7 @@ java-libs/appcompat/.project
 *.iml
 captures/
 
-#Qt Creator
-*.config
-*.creator
-*.creator.user
-*.files
-*.includes
-
 #gradle
-gradlew.bat
-gradlew
-gradle*/
 .gradle/
 build/
 vlc-android/build/

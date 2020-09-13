@@ -8,7 +8,9 @@ android {
     packagingOptions {
         pickFirst '**/*.so'
     }
-
+    lintOptions {
+        abortOnError false
+    }
     androidExtensions {
         features = ["parcelize"]
     }

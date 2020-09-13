@@ -6,7 +6,9 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     kotlinOptions.jvmTarget = "1.8"
-
+    lintOptions {
+        abortOnError false
+    }
     packagingOptions {
         pickFirst '**/*.so'
     }
