@@ -33,7 +33,9 @@ android {
     packagingOptions {
         pickFirst '**/*.so'
     }
-
+    lintOptions {
+        abortOnError false
+    }
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion

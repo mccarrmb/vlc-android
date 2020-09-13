@@ -12,7 +12,9 @@ ext {
     libraryDescription = 'Android bindings and API for VLC'
 }
 android {
-
+    lintOptions {
+        abortOnError false
+    }
     defaultConfig {
         compileSdkVersion rootProject.ext.compileSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion

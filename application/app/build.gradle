@@ -2,6 +2,10 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 android {
+    lintOptions {
+        abortOnError false
+    }
+
     packagingOptions {
         exclude 'META-INF/main.kotlin_module'
         pickFirst 'lib/armeabi-v7a/libc++_shared.so'

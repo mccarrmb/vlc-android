@@ -110,6 +110,11 @@ android {
         assets.srcDirs = ['flavors/debug/assets']
         assets.srcDirs += files("$projectDir/assets/schemas".toString())
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildToolsVersion '30.0.2'
 }
 
 task generateSources(type: Jar) {
